@@ -1,0 +1,315 @@
+*{
+    margin: 0;
+    padding:0px 0px 0px  0px;
+}
+body{margin: 0;
+    padding: 0;
+   
+}
+@media only all and (min-width:275px){
+body{
+    
+}
+nav{
+
+
+}
+}
+.nav{
+    background-color:#9678D3;
+    padding: 15px 0px 15px 0px;
+    text-align: center;
+    color:white;
+    line-height:1.0;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 0.15px;
+  
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.primary-navbar {
+    background-color:white;
+    color: white;
+}
+
+.secondary-navbar {
+    
+    color: white;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo img, .search img, .search input[type="text"], .search button, .account a, .stores img, .purchases img, .buy img {
+    height: 20px;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    width: 30px;
+}
+
+.search input[type="text"] {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.search button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.secondary-nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+   
+}
+
+
+.secondary-nav-links li {
+    display: inline-block;
+    margin-right: 50px;
+    padding-left: 19px ;
+    margin-top: 20px;
+
+}
+
+.secondary-nav-links li:last-child {
+    margin-right: 0;
+}
+
+.secondary-nav-links li a {
+    color:black;
+    text-decoration:none;
+}
+
+.secondary-nav-links li.abc{
+    color: #9678D3; }
+
+
+
+.heading h3 {
+    text-align: center;
+    margin-top: 50px;
+
+}
+.heading input[type="text"]{
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}  
+.sign {
+
+    margin-right: 1000px;
+}
+.creat img{
+padding: 50px 90px ;
+width: 1300px;
+justify-content: center;
+}
+
+.creat2 img{
+    padding: 30px 90px ;
+width: 1300px;
+justify-content: center;
+
+}
+.lucky{
+    display: flex;
+    justify-content: space-around;
+    padding: 0px 60px;
+}
+
+
+.lucky h5{
+    color: rgb(142, 139, 139);
+    padding: 10px 10px;
+}
+.lucky h3{
+    color: blue;
+    padding: 5px 10px;
+}
+.brand li {
+    display: inline-block; 
+    margin-inline-start: 15px;
+  padding-top: 15px;
+}
+.brand li a {
+    text-decoration: none;
+    gap: 100px;
+    color:black ;
+} 
+.motherimg img{
+    padding: 50px 90px ;
+width: 1300px;
+justify-content: center;
+}
+.box{
+    display: flex;
+    padding: 20px 60px ;
+    text-align: center;
+}
+.card1 p {
+    
+    width: 250px;
+    height: 100px;
+    border-radius: 10px;
+    margin-top: 10px;
+    text-align: right; 
+}
+.here img{
+    padding: 10px 90px ;
+    width: 1300px;
+    justify-content: center;
+} 
+.flexbox{
+display: flex;
+padding-inline: 80px;
+justify-content: space-between
+}
+.newopen{
+    padding: 30px 80px ;
+    width: 1000px;
+    justify-content: center;
+}
+.headtag{
+    padding:  50px 90px ;
+}
+.sunglasses{
+    display: flex;
+    justify-content: space-around;
+    padding: 0px 80px;
+}
+.sunglasses p {
+    padding: 5px 5px;
+    color: rgb(150, 164, 221);
+}
+.sunglasses h5{
+    
+    color: rgb(76, 76, 142);
+    padding: 5px 10px;
+}
+.image{
+    padding: 50px 80px ;
+    width: 1000px;
+    justify-content: center;
+
+}
+.Trending-Now{
+    display: flex;
+    justify-content: space-around;
+    padding: 0px 80px;
+}
+.Trending-Now h4{
+    color: gray;
+    padding: 5px 10px;
+}
+.Trending-Now h3{
+    color: blue;
+    padding: 5px 10px;
+}
+.jeans{
+   display: flex;
+   justify-content: space-around;
+   padding: 0px 80px;
+}
+.jeans h5{
+    padding: 5px 10px;
+}
+.jeans h4{
+    color: blue;
+    padding: 5px 5px;
+}
+.score{
+    text-align: center;
+    padding: 50px;
+}
+.score p{
+    color: rgb(59, 58, 58);
+ 
+}
+ .img{
+    display: flex;
+    justify-content: space-around;
+    padding: 0px 80px;
+ }
+
+.Bestsellers{
+    display:flex ;
+    justify-content: space-around;
+    padding: 0px 70px;
+}
+
+
+.best h3{
+    color: gray;
+    padding: 5px;
+    
+}
+.best h4{
+   padding: 5px;
+    color: rgb(116, 116, 199);
+}
+.Fnew{
+    display: flex;
+    justify-content: space-around;
+    padding: 5px 20px;
+}
+.NEW p{
+padding:  5px;    
+color: gray;
+}
+.lastimg{
+    display:flex;
+    justify-content: space-between;
+    padding: 10px 70px;
+}
+.lower{
+    padding: 100px 80px;
+     width: 100px; 
+    justify-content: center;
+}
+.limg h3{
+    color: rgb(118, 114, 114);
+    padding: 5px;
+}
+.limg h6{
+    font-size:15px ;
+    color: gray;
+    text-decoration: line-through;
+    padding: 5px;
+}
+.limg h5{
+    color:rgb(44, 44, 117);
+    padding: 5px;
+}
+.footer{
+    display: flex;
+    justify-content: space-around;
+
+}
+.foot a  {
+text-decoration: none;
+color: rgb(184, 182, 182);
+text-decoration: #9678D3;
+padding: 15px 0px;
+grid-template-columns: 10px;
+}
+.under{
+    display: flex;
+    justify-content: center;
+}
+
