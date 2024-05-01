@@ -1,315 +1,428 @@
-*{
-    margin: 0;
-    padding:0px 0px 0px  0px;
-}
-body{margin: 0;
-    padding: 0;
-   
-}
-@media only all and (min-width:275px){
-body{
-    
-}
-nav{
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
 
+/* @media all and (min-width: 0px) and (max-width: 400px) {
+  #container {
+    display: grid;
+    grid-template-rows: repeat(10, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+} */
+/* @media all and (min-width: 400px) and (max-width: 750px) {
+  .top {
+    display: grid;
+    grid-template-rows: repeat(7, 4fr);
+    grid-template-columns: repeat(3, 4fr);
+    gap: 10px;
+  } */
+
+.nav {
+  background-color: #9678d3;
+  padding: 15px 10px;
+  text-align: center;
+  width: 100%;
 }
+
+.nav-title {
+  font-family: 'Open Sans';
+  font-size: 10px;
+  margin-bottom: 10px;
+  color: white;
+  span {
+    font-weight: bold;
+  }
 }
-.nav{
-    background-color:#9678D3;
-    padding: 15px 0px 15px 0px;
-    text-align: center;
-    color:white;
-    line-height:1.0;
-    font-size: 15px;
-    font-weight: 400;
-    letter-spacing: 0.15px;
-  
+
+@media screen and (min-width: 768px) {
+  .nav-title {
+    font-size: 16px;
+  }
 }
+
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
+  margin: 0;
+  font-family: Arial, sans-serif;
 }
 
 .primary-navbar {
-    background-color:white;
-    color: white;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  border-bottom: 1px solid #000000;
+
 }
 
-.secondary-navbar {
-    
-    color: white;
-}
+.nav-menu-con {
+  display: flex;
+  align-items: center;
+  padding: 0 15px  ;
+  li {
+    margin: 0 5px;
+    button {
+      font-size: 11px;
+    }
+  }
+  a {
+    text-decoration: none;
+    color: black;
+    font-size: 11px;
+  }
 
-.container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-}
-
-.logo img, .search img, .search input[type="text"], .search button, .account a, .stores img, .purchases img, .buy img {
-    height: 20px;
-}
-
-.search {
-    display: flex;
-    align-items: center;
-    width: 30px;
-}
-
-.search input[type="text"] {
-    padding: 5px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-.search button {
+  button {
     border: none;
     background-color: transparent;
-    cursor: pointer;
-    margin-left: 5px;
+    display: flex;
+    align-items: center;
+
+    font-size: 15px;
+  }
+  .fAVHJ{
+    width: 15px;
+  }
+   .lvL2s{
+    width: 15px;
+  } 
+}
+
+.nav-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: center;
+  padding: 15px 0;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .nav-container{
+    padding: 25px;
+  }
+
+  
+  .nav-menu-con {
+    p {
+      font-size: 20px;
+    }
+    li button {
+      font-size: 20px;
+      gap: 10px;
+    }
+   
+  }
+} .nav-container-logo {
+  height: 20px;
+  padding: 5px;
+} 
+
+ .nav-container-search img {
+  height: 20px;
+}
+
+.nav-container-search {
+  display: flex;
+  align-items: center;
+  border: 1px solid #838d91;
+  padding: 6px 6px;
+  width: 40%;
+}
+
+.nav-container-search-input {
+  border: none;
+  outline: none;
+  font-size: 11px;
+  width: 100%;
 }
 
 .secondary-nav-links {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-   
-}
-
-
-.secondary-nav-links li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  li {
     display: inline-block;
-    margin-right: 50px;
-    padding-left: 19px ;
+
+    padding-right: 20px;
+    padding-left: 50px;
     margin-top: 20px;
-
-}
-
-.secondary-nav-links li:last-child {
-    margin-right: 0;
+  }
+  .blue {
+    color: blue;
+  }
+  .red {
+    color: red;
+  }
 }
 
 .secondary-nav-links li a {
-    color:black;
-    text-decoration:none;
+  color: black;
+  text-decoration: none;
 }
-
-.secondary-nav-links li.abc{
-    color: #9678D3; }
-
-
+/* @media screen and (min-width: 320px) {
+  .secondary-nav-links {
+    li {
+      display: inline-block;
+      justify-content: space-between;
+      padding-right: 5px;
+      padding-left: 5px;
+    }
+  }
+} */
 
 .heading h3 {
-    text-align: center;
-    margin-top: 50px;
-
+  text-align: center;
+  margin-top: 50px;
+  font-size: 25px;
+  padding: 10px;
 }
-.heading input[type="text"]{
-    padding: 5px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}  
 .sign {
+  padding: 10px;
+  border: 1px solid blue;
+  display: inline;
+  font-size: 10px;
+  margin-left: 640px;
 
-    margin-right: 1000px;
+  input {
+    text-align: center;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    width: 200px;
+  }
 }
-.creat img{
-padding: 50px 90px ;
-width: 1300px;
-justify-content: center;
+.heading {
+  padding: 5px;
+
+  border-radius: 5px;
+}
+.creat img {
+  padding: 50px 90px;
+  width: 1300px;
+  justify-content: center;
 }
 
-.creat2 img{
-    padding: 30px 90px ;
-width: 1300px;
-justify-content: center;
-
+.creat2 img {
+  padding: 30px 90px;
+  width: 1300px;
+  justify-content: center;
 }
-.lucky{
-    display: flex;
-    justify-content: space-around;
-    padding: 0px 60px;
-}
-
-
-.lucky h5{
+.lucky {
+  display: flex;
+  justify-content: space-around;
+  padding: 0px 60px;
+  text-align: center;
+  h5 {
     color: rgb(142, 139, 139);
     padding: 10px 10px;
-}
-.lucky h3{
+  }
+  h3 {
     color: blue;
     padding: 5px 10px;
-}
-.brand li {
-    display: inline-block; 
-    margin-inline-start: 15px;
-  padding-top: 15px;
-}
-.brand li a {
-    text-decoration: none;
-    gap: 100px;
-    color:black ;
-} 
-.motherimg img{
-    padding: 50px 90px ;
-width: 1300px;
-justify-content: center;
-}
-.box{
-    display: flex;
-    padding: 20px 60px ;
-    text-align: center;
-}
-.card1 p {
-    
-    width: 250px;
-    height: 100px;
-    border-radius: 10px;
-    margin-top: 10px;
-    text-align: right; 
-}
-.here img{
-    padding: 10px 90px ;
-    width: 1300px;
-    justify-content: center;
-} 
-.flexbox{
-display: flex;
-padding-inline: 80px;
-justify-content: space-between
-}
-.newopen{
-    padding: 30px 80px ;
-    width: 1000px;
-    justify-content: center;
-}
-.headtag{
-    padding:  50px 90px ;
-}
-.sunglasses{
-    display: flex;
-    justify-content: space-around;
-    padding: 0px 80px;
-}
-.sunglasses p {
-    padding: 5px 5px;
-    color: rgb(150, 164, 221);
-}
-.sunglasses h5{
-    
-    color: rgb(76, 76, 142);
-    padding: 5px 10px;
-}
-.image{
-    padding: 50px 80px ;
-    width: 1000px;
-    justify-content: center;
-
-}
-.Trending-Now{
-    display: flex;
-    justify-content: space-around;
-    padding: 0px 80px;
-}
-.Trending-Now h4{
-    color: gray;
-    padding: 5px 10px;
-}
-.Trending-Now h3{
-    color: blue;
-    padding: 5px 10px;
-}
-.jeans{
-   display: flex;
-   justify-content: space-around;
-   padding: 0px 80px;
-}
-.jeans h5{
-    padding: 5px 10px;
-}
-.jeans h4{
-    color: blue;
-    padding: 5px 5px;
-}
-.score{
-    text-align: center;
-    padding: 50px;
-}
-.score p{
-    color: rgb(59, 58, 58);
- 
-}
- .img{
-    display: flex;
-    justify-content: space-around;
-    padding: 0px 80px;
- }
-
-.Bestsellers{
-    display:flex ;
-    justify-content: space-around;
-    padding: 0px 70px;
-}
-
-
-.best h3{
-    color: gray;
-    padding: 5px;
-    
-}
-.best h4{
-   padding: 5px;
-    color: rgb(116, 116, 199);
-}
-.Fnew{
-    display: flex;
-    justify-content: space-around;
-    padding: 5px 20px;
-}
-.NEW p{
-padding:  5px;    
-color: gray;
-}
-.lastimg{
-    display:flex;
-    justify-content: space-between;
-    padding: 10px 70px;
-}
-.lower{
-    padding: 100px 80px;
-     width: 100px; 
-    justify-content: center;
-}
-.limg h3{
-    color: rgb(118, 114, 114);
-    padding: 5px;
-}
-.limg h6{
-    font-size:15px ;
+  }
+  h6 {
+    font-size: 15px;
     color: gray;
     text-decoration: line-through;
     padding: 5px;
+  }
 }
-.limg h5{
-    color:rgb(44, 44, 117);
+
+.brand li {
+  display: inline-block;
+  margin-inline-start: 15px;
+  padding-top: 15px;
+}
+.brand li a {
+  text-decoration: none;
+  gap: 100px;
+  color: black;
+}
+.horizontal {
+  padding-right: 100px;
+}
+.motherimg img {
+  padding: 50px 90px;
+  width: 1300px;
+  justify-content: center;
+}
+.box {
+  display: flex;
+  padding: 20px 60px;
+  text-align: center;
+}
+.card1 p {
+  width: 250px;
+  height: 100px;
+  border-radius: 10px;
+  margin-top: 10px;
+  text-align: right;
+}
+.here img {
+  padding: 10px 90px;
+  width: 1300px;
+  justify-content: center;
+}
+.flexbox {
+  display: flex;
+  padding-inline: 80px;
+  justify-content: space-between;
+}
+.newopen {
+  padding: 30px 80px;
+  width: 1000px;
+  justify-content: center;
+}
+.headtag {
+  padding: 50px 90px;
+}
+.sunglasses {
+  display: flex;
+  justify-content: space-around;
+  padding: 0px 80px;
+  text-align: left;
+  p {
+    padding: 5px 5px;
+    color: rgb(47, 45, 52);
+  }
+  h5 {
+    color: rgb(60, 60, 161);
+    padding: 5px 10px;
+    font-size: 15px;
+  }
+  h6 {
+    font-size: 15px;
+    color: gray;
+    text-decoration: line-through;
     padding: 5px;
-}
-.footer{
-    display: flex;
-    justify-content: space-around;
-
-}
-.foot a  {
-text-decoration: none;
-color: rgb(184, 182, 182);
-text-decoration: #9678D3;
-padding: 15px 0px;
-grid-template-columns: 10px;
-}
-.under{
-    display: flex;
-    justify-content: center;
+  }
 }
 
+.image {
+  padding: 50px 80px;
+  width: 1000px;
+  justify-content: center;
+}
+.Trending-Now {
+  display: flex;
+  justify-content: space-around;
+  padding: 0px 80px;
+  text-align: left;
+  h4 {
+    color: gray;
+    padding: 5px 18px 6px 0px;
+  }
+  h3 {
+    color: blue;
+    padding: 5px 10px 0px 0px;
+  }
+  h6 {
+    font-size: 15px;
+    color: gray;
+    text-decoration: line-through;
+    padding: 5px 10px 0px 0px;
+  }
+}
+
+.jeans {
+  display: flex;
+  justify-content: space-around;
+  padding: 0px 80px;
+  text-align: left;
+  h5 {
+    padding: 10px 10px 5px 0px;
+  }
+  h4 {
+    color: blue;
+    padding: 5px 10px 0px 0px;
+  }
+  h6 {
+    font-size: 15px;
+    color: gray;
+    text-decoration: line-through;
+    padding: 5px 10px 0px 0px;
+  }
+}
+
+.score {
+  text-align: center;
+  padding: 50px;
+}
+.score p {
+  color: rgb(59, 58, 58);
+}
+.img {
+  display: flex;
+  justify-content: space-around;
+  padding: 0px 80px;
+}
+
+.Bestsellers {
+  display: flex;
+  justify-content: space-around;
+  padding: 0px 70px;
+  text-align: center;
+}
+
+.best h3 {
+  color: gray;
+  padding: 5px;
+}
+.best h4 {
+  padding: 5px;
+  color: rgb(116, 116, 199);
+}
+.Fnew {
+  display: flex;
+  justify-content: space-around;
+  padding: 5px 20px;
+}
+.NEW p {
+  padding: 5px;
+  color: gray;
+}
+.lastimg {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 70px;
+  text-align: left;
+}
+.lower {
+  padding: 100px 80px;
+  width: 100px;
+  justify-content: center;
+}
+.limg h3 {
+  color: rgb(118, 114, 114);
+  padding: 5px;
+}
+.limg h6 {
+  font-size: 15px;
+  color: gray;
+  text-decoration: line-through;
+  padding: 5px;
+}
+.limg h5 {
+  color: rgb(44, 44, 190);
+  padding: 5px;
+  font-size: 15px;
+}
+.footer {
+  display: flex;
+  justify-content: space-around;
+}
+.foot a {
+  text-decoration: none;
+  color: rgb(184, 182, 182);
+  text-decoration: #9678d3;
+  padding: 15px 0px;
+  grid-template-columns: 10px;
+}
+.under {
+  display: flex;
+  justify-content: center;
+}
